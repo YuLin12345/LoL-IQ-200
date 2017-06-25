@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621FF1AD1E3E84E40030CA74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1AC1E3E84E40030CA74 /* AppDelegate.swift */; };
+		621FF1AF1E3E84E40030CA74 /* LookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1AE1E3E84E40030CA74 /* LookupViewController.swift */; };
+		621FF1B11E3E84E40030CA74 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1B01E3E84E40030CA74 /* GameViewController.swift */; };
+		621FF1B41E3E84E40030CA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621FF1B21E3E84E40030CA74 /* Main.storyboard */; };
+		621FF1B61E3E84E40030CA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621FF1B51E3E84E40030CA74 /* Assets.xcassets */; };
+		621FF1B91E3E84E50030CA74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621FF1B71E3E84E50030CA74 /* LaunchScreen.storyboard */; };
+		621FF1C41E3E84E50030CA74 /* LoL_IQ_200Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1C31E3E84E50030CA74 /* LoL_IQ_200Tests.swift */; };
+		621FF1CF1E3E84E50030CA74 /* LoL_IQ_200UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1CE1E3E84E50030CA74 /* LoL_IQ_200UITests.swift */; };
+		621FF1DD1E3E854A0030CA74 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1DC1E3E854A0030CA74 /* Skill.swift */; };
+		621FF1DF1E3E85590030CA74 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1DE1E3E85590030CA74 /* Item.swift */; };
+		621FF1E31E3E85740030CA74 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E21E3E85740030CA74 /* Champion.swift */; };
+		621FF1E51E3E8AC40030CA74 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E41E3E8AC40030CA74 /* ItemViewController.swift */; };
+		621FF1E71E3E8AED0030CA74 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E61E3E8AED0030CA74 /* SkillViewController.swift */; };
+		621FF1E91E3E8B0D0030CA74 /* ChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E81E3E8B0D0030CA74 /* ChampionViewController.swift */; };
+		6262BCAF1EFD99FD0056C582 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6216A1F01E43C4870036CCFF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6262BCB01EFD9A0B0056C582 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62FAE4521E3EA5BB007EB328 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62A4C8F01E3FE00F0031EDB9 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A4C8EF1E3FE00F0031EDB9 /* Stat.swift */; };
+		62ABA7761E3EA2BF00AF2232 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABA7751E3EA2BF00AF2232 /* Connection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6216A1EF1E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		6216A1F11E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		6216A1F31E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		6216A1F51E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		6216A1F71E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		6216A1F91E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		6216A1FB1E43C4870036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+		6216A1FD1E43C4A10036CCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		621FF1C01E3E84E50030CA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621FF1A11E3E84E40030CA74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621FF1A81E3E84E40030CA74;
+			remoteInfo = "LoL IQ 200";
+		};
+		621FF1CB1E3E84E50030CA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621FF1A11E3E84E40030CA74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621FF1A81E3E84E40030CA74;
+			remoteInfo = "LoL IQ 200";
+		};
+		62550E051E43C38F00CECD01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		62FAE4511E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		62FAE4531E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		62FAE4551E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		62FAE4571E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		62FAE4591E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		62FAE45B1E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		62FAE45D1E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62FAE4611E3EA5D5007EB328 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6262BCB01EFD9A0B0056C582 /* Alamofire.framework in CopyFiles */,
+				6262BCAF1EFD99FD0056C582 /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		621FF1A91E3E84E40030CA74 /* LoL IQ 200.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoL IQ 200.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621FF1AC1E3E84E40030CA74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		621FF1AE1E3E84E40030CA74 /* LookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupViewController.swift; sourceTree = "<group>"; };
+		621FF1B01E3E84E40030CA74 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		621FF1B31E3E84E40030CA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		621FF1B51E3E84E40030CA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		621FF1B81E3E84E50030CA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		621FF1BA1E3E84E50030CA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621FF1BF1E3E84E50030CA74 /* LoL IQ 200Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL IQ 200Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621FF1C31E3E84E50030CA74 /* LoL_IQ_200Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoL_IQ_200Tests.swift; sourceTree = "<group>"; };
+		621FF1C51E3E84E50030CA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621FF1CA1E3E84E50030CA74 /* LoL IQ 200UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL IQ 200UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621FF1CE1E3E84E50030CA74 /* LoL_IQ_200UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoL_IQ_200UITests.swift; sourceTree = "<group>"; };
+		621FF1D01E3E84E50030CA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621FF1DC1E3E854A0030CA74 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		621FF1DE1E3E85590030CA74 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		621FF1E21E3E85740030CA74 /* Champion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		621FF1E41E3E8AC40030CA74 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		621FF1E61E3E8AED0030CA74 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		621FF1E81E3E8B0D0030CA74 /* ChampionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionViewController.swift; sourceTree = "<group>"; };
+		62A4C8EF1E3FE00F0031EDB9 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		62ABA7751E3EA2BF00AF2232 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		621FF1A61E3E84E40030CA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621FF1BC1E3E84E50030CA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621FF1C71E3E84E50030CA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6216A1E61E43C4870036CCFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6216A1F01E43C4870036CCFF /* SwiftyJSON.framework */,
+				6216A1F21E43C4870036CCFF /* SwiftyJSON iOS Tests.xctest */,
+				6216A1F41E43C4870036CCFF /* SwiftyJSON.framework */,
+				6216A1F61E43C4870036CCFF /* SwiftyJSON OSX Tests.xctest */,
+				6216A1F81E43C4870036CCFF /* SwiftyJSON.framework */,
+				6216A1FA1E43C4870036CCFF /* SwiftyJSON.framework */,
+				6216A1FC1E43C4870036CCFF /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		621FF1A01E3E84E40030CA74 = {
+			isa = PBXGroup;
+			children = (
+				621FF1AB1E3E84E40030CA74 /* LoL IQ 200 */,
+				621FF1C21E3E84E50030CA74 /* LoL IQ 200Tests */,
+				621FF1CD1E3E84E50030CA74 /* LoL IQ 200UITests */,
+				621FF1AA1E3E84E40030CA74 /* Products */,
+				62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */,
+				6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		621FF1AA1E3E84E40030CA74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				621FF1A91E3E84E40030CA74 /* LoL IQ 200.app */,
+				621FF1BF1E3E84E50030CA74 /* LoL IQ 200Tests.xctest */,
+				621FF1CA1E3E84E50030CA74 /* LoL IQ 200UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		621FF1AB1E3E84E40030CA74 /* LoL IQ 200 */ = {
+			isa = PBXGroup;
+			children = (
+				621FF1B51E3E84E40030CA74 /* Assets.xcassets */,
+				621FF1AC1E3E84E40030CA74 /* AppDelegate.swift */,
+				621FF1AE1E3E84E40030CA74 /* LookupViewController.swift */,
+				621FF1B01E3E84E40030CA74 /* GameViewController.swift */,
+				621FF1E81E3E8B0D0030CA74 /* ChampionViewController.swift */,
+				621FF1E41E3E8AC40030CA74 /* ItemViewController.swift */,
+				621FF1E61E3E8AED0030CA74 /* SkillViewController.swift */,
+				621FF1E21E3E85740030CA74 /* Champion.swift */,
+				621FF1DE1E3E85590030CA74 /* Item.swift */,
+				621FF1DC1E3E854A0030CA74 /* Skill.swift */,
+				62ABA7751E3EA2BF00AF2232 /* Connection.swift */,
+				62A4C8EF1E3FE00F0031EDB9 /* Stat.swift */,
+				621FF1B21E3E84E40030CA74 /* Main.storyboard */,
+				621FF1B71E3E84E50030CA74 /* LaunchScreen.storyboard */,
+				621FF1BA1E3E84E50030CA74 /* Info.plist */,
+			);
+			path = "LoL IQ 200";
+			sourceTree = "<group>";
+		};
+		621FF1C21E3E84E50030CA74 /* LoL IQ 200Tests */ = {
+			isa = PBXGroup;
+			children = (
+				621FF1C31E3E84E50030CA74 /* LoL_IQ_200Tests.swift */,
+				621FF1C51E3E84E50030CA74 /* Info.plist */,
+			);
+			path = "LoL IQ 200Tests";
+			sourceTree = "<group>";
+		};
+		621FF1CD1E3E84E50030CA74 /* LoL IQ 200UITests */ = {
+			isa = PBXGroup;
+			children = (
+				621FF1CE1E3E84E50030CA74 /* LoL_IQ_200UITests.swift */,
+				621FF1D01E3E84E50030CA74 /* Info.plist */,
+			);
+			path = "LoL IQ 200UITests";
+			sourceTree = "<group>";
+		};
+		62FAE4471E3EA5BB007EB328 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62FAE4521E3EA5BB007EB328 /* Alamofire.framework */,
+				62FAE4541E3EA5BB007EB328 /* Alamofire iOS Tests.xctest */,
+				62FAE4561E3EA5BB007EB328 /* Alamofire.framework */,
+				62FAE4581E3EA5BB007EB328 /* Alamofire macOS Tests.xctest */,
+				62FAE45A1E3EA5BB007EB328 /* Alamofire.framework */,
+				62FAE45C1E3EA5BB007EB328 /* Alamofire tvOS Tests.xctest */,
+				62FAE45E1E3EA5BB007EB328 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		621FF1A81E3E84E40030CA74 /* LoL IQ 200 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621FF1D31E3E84E50030CA74 /* Build configuration list for PBXNativeTarget "LoL IQ 200" */;
+			buildPhases = (
+				621FF1A51E3E84E40030CA74 /* Sources */,
+				621FF1A61E3E84E40030CA74 /* Frameworks */,
+				621FF1A71E3E84E40030CA74 /* Resources */,
+				62FAE4611E3EA5D5007EB328 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6216A1FE1E43C4A10036CCFF /* PBXTargetDependency */,
+				62550E061E43C38F00CECD01 /* PBXTargetDependency */,
+			);
+			name = "LoL IQ 200";
+			productName = "LoL IQ 200";
+			productReference = 621FF1A91E3E84E40030CA74 /* LoL IQ 200.app */;
+			productType = "com.apple.product-type.application";
+		};
+		621FF1BE1E3E84E50030CA74 /* LoL IQ 200Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621FF1D61E3E84E50030CA74 /* Build configuration list for PBXNativeTarget "LoL IQ 200Tests" */;
+			buildPhases = (
+				621FF1BB1E3E84E50030CA74 /* Sources */,
+				621FF1BC1E3E84E50030CA74 /* Frameworks */,
+				621FF1BD1E3E84E50030CA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				621FF1C11E3E84E50030CA74 /* PBXTargetDependency */,
+			);
+			name = "LoL IQ 200Tests";
+			productName = "LoL IQ 200Tests";
+			productReference = 621FF1BF1E3E84E50030CA74 /* LoL IQ 200Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		621FF1C91E3E84E50030CA74 /* LoL IQ 200UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621FF1D91E3E84E50030CA74 /* Build configuration list for PBXNativeTarget "LoL IQ 200UITests" */;
+			buildPhases = (
+				621FF1C61E3E84E50030CA74 /* Sources */,
+				621FF1C71E3E84E50030CA74 /* Frameworks */,
+				621FF1C81E3E84E50030CA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				621FF1CC1E3E84E50030CA74 /* PBXTargetDependency */,
+			);
+			name = "LoL IQ 200UITests";
+			productName = "LoL IQ 200UITests";
+			productReference = 621FF1CA1E3E84E50030CA74 /* LoL IQ 200UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		621FF1A11E3E84E40030CA74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Unknown;
+				TargetAttributes = {
+					621FF1A81E3E84E40030CA74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 257B3G5H93;
+						ProvisioningStyle = Automatic;
+					};
+					621FF1BE1E3E84E50030CA74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 621FF1A81E3E84E40030CA74;
+					};
+					621FF1C91E3E84E50030CA74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 621FF1A81E3E84E40030CA74;
+					};
+				};
+			};
+			buildConfigurationList = 621FF1A41E3E84E40030CA74 /* Build configuration list for PBXProject "LoL IQ 200" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 621FF1A01E3E84E40030CA74;
+			productRefGroup = 621FF1AA1E3E84E40030CA74 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 62FAE4471E3EA5BB007EB328 /* Products */;
+					ProjectRef = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 6216A1E61E43C4870036CCFF /* Products */;
+					ProjectRef = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				621FF1A81E3E84E40030CA74 /* LoL IQ 200 */,
+				621FF1BE1E3E84E50030CA74 /* LoL IQ 200Tests */,
+				621FF1C91E3E84E50030CA74 /* LoL IQ 200UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6216A1F01E43C4870036CCFF /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6216A1EF1E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6216A1F21E43C4870036CCFF /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 6216A1F11E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6216A1F41E43C4870036CCFF /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6216A1F31E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6216A1F61E43C4870036CCFF /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = 6216A1F51E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6216A1F81E43C4870036CCFF /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6216A1F71E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6216A1FA1E43C4870036CCFF /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6216A1F91E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6216A1FC1E43C4870036CCFF /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 6216A1FB1E43C4870036CCFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE4521E3EA5BB007EB328 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 62FAE4511E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE4541E3EA5BB007EB328 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 62FAE4531E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE4561E3EA5BB007EB328 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 62FAE4551E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE4581E3EA5BB007EB328 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 62FAE4571E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE45A1E3EA5BB007EB328 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 62FAE4591E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE45C1E3EA5BB007EB328 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 62FAE45B1E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62FAE45E1E3EA5BB007EB328 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 62FAE45D1E3EA5BB007EB328 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		621FF1A71E3E84E40030CA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621FF1B91E3E84E50030CA74 /* LaunchScreen.storyboard in Resources */,
+				621FF1B61E3E84E40030CA74 /* Assets.xcassets in Resources */,
+				621FF1B41E3E84E40030CA74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621FF1BD1E3E84E50030CA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621FF1C81E3E84E50030CA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		621FF1A51E3E84E40030CA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621FF1E51E3E8AC40030CA74 /* ItemViewController.swift in Sources */,
+				621FF1DF1E3E85590030CA74 /* Item.swift in Sources */,
+				621FF1E71E3E8AED0030CA74 /* SkillViewController.swift in Sources */,
+				621FF1B11E3E84E40030CA74 /* GameViewController.swift in Sources */,
+				62A4C8F01E3FE00F0031EDB9 /* Stat.swift in Sources */,
+				621FF1E31E3E85740030CA74 /* Champion.swift in Sources */,
+				621FF1DD1E3E854A0030CA74 /* Skill.swift in Sources */,
+				621FF1AD1E3E84E40030CA74 /* AppDelegate.swift in Sources */,
+				62ABA7761E3EA2BF00AF2232 /* Connection.swift in Sources */,
+				621FF1E91E3E8B0D0030CA74 /* ChampionViewController.swift in Sources */,
+				621FF1AF1E3E84E40030CA74 /* LookupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621FF1BB1E3E84E50030CA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621FF1C41E3E84E50030CA74 /* LoL_IQ_200Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621FF1C61E3E84E50030CA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621FF1CF1E3E84E50030CA74 /* LoL_IQ_200UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6216A1FE1E43C4A10036CCFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 6216A1FD1E43C4A10036CCFF /* PBXContainerItemProxy */;
+		};
+		621FF1C11E3E84E50030CA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621FF1A81E3E84E40030CA74 /* LoL IQ 200 */;
+			targetProxy = 621FF1C01E3E84E50030CA74 /* PBXContainerItemProxy */;
+		};
+		621FF1CC1E3E84E50030CA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621FF1A81E3E84E40030CA74 /* LoL IQ 200 */;
+			targetProxy = 621FF1CB1E3E84E50030CA74 /* PBXContainerItemProxy */;
+		};
+		62550E061E43C38F00CECD01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 62550E051E43C38F00CECD01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		621FF1B21E3E84E40030CA74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621FF1B31E3E84E40030CA74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		621FF1B71E3E84E50030CA74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621FF1B81E3E84E50030CA74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		621FF1D11E3E84E50030CA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		621FF1D21E3E84E50030CA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		621FF1D41E3E84E50030CA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 257B3G5H93;
+				INFOPLIST_FILE = "LoL IQ 200/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Unknown.LoL-IQ-200";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		621FF1D51E3E84E50030CA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 257B3G5H93;
+				INFOPLIST_FILE = "LoL IQ 200/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Unknown.LoL-IQ-200";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		621FF1D71E3E84E50030CA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LoL IQ 200Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unknown.LoL-IQ-200Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoL IQ 200.app/LoL IQ 200";
+			};
+			name = Debug;
+		};
+		621FF1D81E3E84E50030CA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LoL IQ 200Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unknown.LoL-IQ-200Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoL IQ 200.app/LoL IQ 200";
+			};
+			name = Release;
+		};
+		621FF1DA1E3E84E50030CA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "LoL IQ 200UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unknown.LoL-IQ-200UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "LoL IQ 200";
+			};
+			name = Debug;
+		};
+		621FF1DB1E3E84E50030CA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "LoL IQ 200UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unknown.LoL-IQ-200UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "LoL IQ 200";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		621FF1A41E3E84E40030CA74 /* Build configuration list for PBXProject "LoL IQ 200" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621FF1D11E3E84E50030CA74 /* Debug */,
+				621FF1D21E3E84E50030CA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621FF1D31E3E84E50030CA74 /* Build configuration list for PBXNativeTarget "LoL IQ 200" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621FF1D41E3E84E50030CA74 /* Debug */,
+				621FF1D51E3E84E50030CA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621FF1D61E3E84E50030CA74 /* Build configuration list for PBXNativeTarget "LoL IQ 200Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621FF1D71E3E84E50030CA74 /* Debug */,
+				621FF1D81E3E84E50030CA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621FF1D91E3E84E50030CA74 /* Build configuration list for PBXNativeTarget "LoL IQ 200UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621FF1DA1E3E84E50030CA74 /* Debug */,
+				621FF1DB1E3E84E50030CA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 621FF1A11E3E84E40030CA74 /* Project object */;
+}
