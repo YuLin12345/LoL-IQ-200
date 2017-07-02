@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-dk-HRr">
-                                <rect key="frame" x="16" y="111" width="110" height="100"/>
+                                <rect key="frame" x="16" y="111" width="108" height="78"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99972134830000003" green="0.99503296610000003" blue="0.82671809200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,20 +59,20 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tMr-ON-l92" secondAttribute="trailing" id="CGt-Kt-bYK"/>
                             <constraint firstItem="tMr-ON-l92" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="15" id="Chd-ri-wWT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="peV-vI-vji" secondAttribute="trailing" id="F19-cY-AmZ"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ch8-dk-HRr" secondAttribute="bottom" constant="407" id="KLI-5p-Bi2"/>
-                            <constraint firstItem="peV-vI-vji" firstAttribute="leading" secondItem="ch8-dk-HRr" secondAttribute="trailing" constant="109" id="Kfy-Na-xO3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ch8-dk-HRr" secondAttribute="leading" id="OEM-jl-77k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H2K-MA-bPE" secondAttribute="trailing" constant="144" id="TOz-xg-dfP"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ch8-dk-HRr" secondAttribute="bottom" constant="429" id="X9V-Au-fFE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="tMr-ON-l92" secondAttribute="leading" id="dIR-Gg-2rp"/>
                             <constraint firstItem="H2K-MA-bPE" firstAttribute="top" secondItem="tMr-ON-l92" secondAttribute="bottom" constant="8" id="eYN-KC-2pK"/>
                             <constraint firstItem="H2K-MA-bPE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="144" id="fg5-xu-Wgd"/>
-                            <constraint firstItem="wlN-ab-I8s" firstAttribute="leading" secondItem="ch8-dk-HRr" secondAttribute="trailing" constant="9" id="oeG-bY-DMk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wlN-ab-I8s" secondAttribute="trailing" id="p0w-3c-Fdn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ch8-dk-HRr" secondAttribute="trailing" constant="235" id="rys-d3-Nba"/>
                             <constraint firstItem="wlN-ab-I8s" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="91" id="xa6-fm-fEB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lookup" image="Lookup Icon" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="profileIcon" destination="ch8-dk-HRr" id="aED-7C-OwA"/>
                         <outlet property="summonerLevelLabel" destination="peV-vI-vji" id="Dm9-vZ-dwR"/>
                         <outlet property="summonerNameLabel" destination="wlN-ab-I8s" id="jJO-57-htb"/>
                         <outlet property="textField" destination="tMr-ON-l92" id="cSr-0E-F9f"/>
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735.20000000000005" y="-371.06446776611699"/>
+            <point key="canvasLocation" x="-1295.2" y="-11.244377811094454"/>
         </scene>
         <!--Games-->
         <scene sceneID="wg7-f3-ORb">
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="468" y="-11"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -169,7 +169,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-321" y="-11"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="3WQ-Ok-41K">
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jug-eN-dZN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="72"/>
+            <point key="canvasLocation" x="1527" y="-16"/>
         </scene>
         <!--Item View Controller-->
         <scene sceneID="SMz-Rn-H9p">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHz-aZ-NKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="760"/>
+            <point key="canvasLocation" x="1527" y="791"/>
         </scene>
         <!--Champion View Controller-->
         <scene sceneID="sYc-ar-RSd">
@@ -420,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wC6-bh-jTt" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528.8" y="-649.02548725637189"/>
+            <point key="canvasLocation" x="1526" y="-815"/>
         </scene>
     </scenes>
     <resources>
@@ -429,6 +429,6 @@
         <image name="Lookup Icon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6gy-Jz-Lnk"/>
+        <segue reference="fVs-0Q-knN"/>
     </inferredMetricsTieBreakers>
 </document>

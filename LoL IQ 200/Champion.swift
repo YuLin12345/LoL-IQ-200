@@ -144,6 +144,8 @@ enum ChampionsEnum: UInt32 {
     case Ivern          //427
     case Kalista        //429
     case Bard           //432
+    case Rakan          //497
+    case Xayah          //498
 }
 
 // Find the maximun number of ChampionEnum and return the value.
@@ -298,7 +300,9 @@ let ChampionArray = [
     "RekSai",
     "Ivern",
     "Kalista",
-    "Bard"
+    "Bard",
+    "Rakan",
+    "Xayah"
 ]
 
 // Pick random Champion from the array and return value.

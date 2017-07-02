@@ -74,7 +74,6 @@ class ChampionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         scoreLabel.text = String(score)
         
@@ -348,8 +347,11 @@ class ChampionViewController: UIViewController {
             
             championQuestion(question: UIImage(named: "Kalista"), answers: [String(describing: randomChampion()), String(describing: ChampionsEnum.Kalista), String(describing: randomChampion()), String(describing: randomChampion())], answer: 2),
             
-            championQuestion(question: UIImage(named: "Bard"), answers: [String(describing: ChampionsEnum.Bard), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1)
+            championQuestion(question: UIImage(named: "Bard"), answers: [String(describing: ChampionsEnum.Bard), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1),
             
+            championQuestion(question: UIImage(named: "Rakan"), answers: [String(describing: ChampionsEnum.Rakan), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1),
+            
+            championQuestion(question: UIImage(named: "Xayah"), answers: [String(describing: ChampionsEnum.Xayah), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1)
         ]
         
         pickQuestion()
@@ -357,7 +359,6 @@ class ChampionViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // Pick question function.

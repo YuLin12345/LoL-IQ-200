@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,8 +21,10 @@
 		621FF1E51E3E8AC40030CA74 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E41E3E8AC40030CA74 /* ItemViewController.swift */; };
 		621FF1E71E3E8AED0030CA74 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E61E3E8AED0030CA74 /* SkillViewController.swift */; };
 		621FF1E91E3E8B0D0030CA74 /* ChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E81E3E8B0D0030CA74 /* ChampionViewController.swift */; };
-		6262BCAF1EFD99FD0056C582 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6216A1F01E43C4870036CCFF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6262BCB01EFD9A0B0056C582 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62FAE4521E3EA5BB007EB328 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		629BB5221F08972000E07641 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FAE4521E3EA5BB007EB328 /* Alamofire.framework */; };
+		629BB5231F08972000E07641 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62FAE4521E3EA5BB007EB328 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		629BB5271F08973100E07641 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6216A1F01E43C4870036CCFF /* SwiftyJSON.framework */; };
+		629BB5281F08973100E07641 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6216A1F01E43C4870036CCFF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62A4C8F01E3FE00F0031EDB9 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A4C8EF1E3FE00F0031EDB9 /* Stat.swift */; };
 		62ABA7761E3EA2BF00AF2232 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABA7751E3EA2BF00AF2232 /* Connection.swift */; };
 /* End PBXBuildFile section */
@@ -77,13 +79,6 @@
 			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
-		6216A1FD1E43C4A10036CCFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
 		621FF1C01E3E84E50030CA74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 621FF1A11E3E84E40030CA74 /* Project object */;
@@ -98,12 +93,19 @@
 			remoteGlobalIDString = 621FF1A81E3E84E40030CA74;
 			remoteInfo = "LoL IQ 200";
 		};
-		62550E051E43C38F00CECD01 /* PBXContainerItemProxy */ = {
+		629BB5241F08972000E07641 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62FAE4461E3EA5BB007EB328 /* Alamofire.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
+		};
+		629BB5291F08973100E07641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6216A1E51E43C4870036CCFF /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
 		};
 		62FAE4511E3EA5BB007EB328 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -157,15 +159,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		62FAE4611E3EA5D5007EB328 /* CopyFiles */ = {
+		629BB5261F08972000E07641 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6262BCB01EFD9A0B0056C582 /* Alamofire.framework in CopyFiles */,
-				6262BCAF1EFD99FD0056C582 /* SwiftyJSON.framework in CopyFiles */,
+				629BB5281F08973100E07641 /* SwiftyJSON.framework in Embed Frameworks */,
+				629BB5231F08972000E07641 /* Alamofire.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -202,6 +205,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629BB5271F08973100E07641 /* SwiftyJSON.framework in Frameworks */,
+				629BB5221F08972000E07641 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,13 +327,13 @@
 				621FF1A51E3E84E40030CA74 /* Sources */,
 				621FF1A61E3E84E40030CA74 /* Frameworks */,
 				621FF1A71E3E84E40030CA74 /* Resources */,
-				62FAE4611E3EA5D5007EB328 /* CopyFiles */,
+				629BB5261F08972000E07641 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6216A1FE1E43C4A10036CCFF /* PBXTargetDependency */,
-				62550E061E43C38F00CECD01 /* PBXTargetDependency */,
+				629BB5251F08972000E07641 /* PBXTargetDependency */,
+				629BB52A1F08973100E07641 /* PBXTargetDependency */,
 			);
 			name = "LoL IQ 200";
 			productName = "LoL IQ 200";
@@ -383,7 +388,6 @@
 				TargetAttributes = {
 					621FF1A81E3E84E40030CA74 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 257B3G5H93;
 						ProvisioningStyle = Automatic;
 					};
 					621FF1BE1E3E84E50030CA74 = {
@@ -399,7 +403,7 @@
 				};
 			};
 			buildConfigurationList = 621FF1A41E3E84E40030CA74 /* Build configuration list for PBXProject "LoL IQ 200" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -594,11 +598,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6216A1FE1E43C4A10036CCFF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftyJSON iOS";
-			targetProxy = 6216A1FD1E43C4A10036CCFF /* PBXContainerItemProxy */;
-		};
 		621FF1C11E3E84E50030CA74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 621FF1A81E3E84E40030CA74 /* LoL IQ 200 */;
@@ -609,10 +608,15 @@
 			target = 621FF1A81E3E84E40030CA74 /* LoL IQ 200 */;
 			targetProxy = 621FF1CB1E3E84E50030CA74 /* PBXContainerItemProxy */;
 		};
-		62550E061E43C38F00CECD01 /* PBXTargetDependency */ = {
+		629BB5251F08972000E07641 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
-			targetProxy = 62550E051E43C38F00CECD01 /* PBXContainerItemProxy */;
+			targetProxy = 629BB5241F08972000E07641 /* PBXContainerItemProxy */;
+		};
+		629BB52A1F08973100E07641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 629BB5291F08973100E07641 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -732,11 +736,14 @@
 		621FF1D41E3E84E50030CA74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_NOTICES = NO;
+				ASSETCATALOG_WARNINGS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 257B3G5H93;
 				INFOPLIST_FILE = "LoL IQ 200/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Unknown.LoL-IQ-200";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -748,11 +755,14 @@
 		621FF1D51E3E84E50030CA74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_NOTICES = NO;
+				ASSETCATALOG_WARNINGS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 257B3G5H93;
 				INFOPLIST_FILE = "LoL IQ 200/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Unknown.LoL-IQ-200";
 				PRODUCT_NAME = "$(TARGET_NAME)";

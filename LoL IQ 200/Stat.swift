@@ -11,11 +11,11 @@ import Alamofire
 import SwiftyJSON
 
 // Variables.
-public var id = Int()
-public var name = String()
-public var profileIconId = Int()
-public var revisionDate = Int64()
-public var summonerLevel = Int()
+var id = Int()
+var name = String()
+var profileIconId = Int()
+var revisionDate = Int64()
+var summonerLevel = Int()
 
 // Get SummonerName function.
 func getSummonerName() {

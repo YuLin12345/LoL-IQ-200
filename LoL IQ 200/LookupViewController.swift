@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Foundation
 import Alamofire
+import SwiftyJSON
 
-public var summonerName = String()
+var summonerName = String()
 
 // Removing white space for parsing.
 extension String {
@@ -20,33 +22,36 @@ extension String {
 
 class LookupViewController: UIViewController {
     
-    // Text Field.
+    // Text Fields.
     @IBOutlet weak var textField: UITextField!
     
     // Labels.
     @IBOutlet weak var summonerNameLabel: UILabel!
     @IBOutlet weak var summonerLevelLabel: UILabel!
     
-    // Button Action.
+    // Images.
+    @IBOutlet weak var profileIcon: UIImageView!
+    
+    // Button Actions.
     @IBAction func getInfoActionButton(_ sender: Any) {
         summonerName = textField.text!.removingWhitespaces()
         getSummonerName()
         
         summonerNameLabel.text = name
         summonerLevelLabel.text = String(summonerLevel)
+        
+        profileIcon.image = UIImage(named: String(describing: profileIconId))
+        
         labelsUnHidden()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         labelsHidden()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func labelsHidden() {
