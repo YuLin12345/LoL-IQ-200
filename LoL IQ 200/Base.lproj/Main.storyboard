@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,13 +26,14 @@
                                 <rect key="frame" x="16" y="35" width="343" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-MA-bPE">
                                 <rect key="frame" x="160" y="73" width="55" height="30"/>
                                 <state key="normal" title="Get Info"/>
                                 <connections>
+                                    <action selector="getInfoActionButton:" destination="9pv-A4-QxB" eventType="touchDown" id="X8C-Xu-oGs"/>
                                     <action selector="getInfoActionButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xg2-c3-8e5"/>
                                 </connections>
                             </button>
@@ -49,11 +50,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-dk-HRr">
-                                <rect key="frame" x="16" y="111" width="108" height="78"/>
+                                <rect key="frame" x="16" y="111" width="113" height="73"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99972134830000003" green="0.99503296610000003" blue="0.82671809200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ch8-dk-HRr" secondAttribute="trailing" constant="230" id="4uE-PV-6kn"/>
                             <constraint firstItem="peV-vI-vji" firstAttribute="top" secondItem="wlN-ab-I8s" secondAttribute="bottom" constant="-5" id="56L-HA-Tsa"/>
                             <constraint firstItem="ch8-dk-HRr" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="91" id="8xx-dI-OGy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tMr-ON-l92" secondAttribute="trailing" id="CGt-Kt-bYK"/>
@@ -61,12 +63,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="peV-vI-vji" secondAttribute="trailing" id="F19-cY-AmZ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ch8-dk-HRr" secondAttribute="leading" id="OEM-jl-77k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H2K-MA-bPE" secondAttribute="trailing" constant="144" id="TOz-xg-dfP"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ch8-dk-HRr" secondAttribute="bottom" constant="429" id="X9V-Au-fFE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="tMr-ON-l92" secondAttribute="leading" id="dIR-Gg-2rp"/>
                             <constraint firstItem="H2K-MA-bPE" firstAttribute="top" secondItem="tMr-ON-l92" secondAttribute="bottom" constant="8" id="eYN-KC-2pK"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ch8-dk-HRr" secondAttribute="bottom" constant="434" id="ehn-ic-o0k"/>
                             <constraint firstItem="H2K-MA-bPE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="144" id="fg5-xu-Wgd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wlN-ab-I8s" secondAttribute="trailing" id="p0w-3c-Fdn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ch8-dk-HRr" secondAttribute="trailing" constant="235" id="rys-d3-Nba"/>
                             <constraint firstItem="wlN-ab-I8s" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="91" id="xa6-fm-fEB"/>
                         </constraints>
                     </view>
@@ -429,6 +430,6 @@
         <image name="Lookup Icon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fVs-0Q-knN"/>
+        <segue reference="iEo-mw-N0Z"/>
     </inferredMetricsTieBreakers>
 </document>

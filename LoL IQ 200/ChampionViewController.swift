@@ -8,6 +8,12 @@
 
 import UIKit
 
+//Variables.
+var questions = [championQuestion]()
+var questionNumber = Int()
+var answerNumber = Int()
+var score = 0
+
 struct championQuestion {
     var question : UIImage!
     var answers : [String]!
@@ -16,26 +22,19 @@ struct championQuestion {
 
 class ChampionViewController: UIViewController {
     
-    // Variables.
-    var questions = [championQuestion]()
-    var questionNumber = Int()
-    var answerNumber = Int()
-    var score = 0
-    
-    // Buttons.
-    @IBOutlet var buttonCollection: [UIButton]! // Question button collection.
-    
-    // Images.
+    //Image.
     @IBOutlet weak var image: UIImageView!  // Question image.
     
-    // Labels.
+    //Labels.
     @IBOutlet weak var scoreLabel: UILabel! // Score label.
     @IBOutlet weak var gameOverScoreLabel: UILabel! // GameOver score label.
     
-    // Views.
+    //Views.
     @IBOutlet weak var gameOver: UIView!    // GameOver view.
     
-    // Button Actions.
+    //Buttons.
+    @IBOutlet var buttonCollection: [UIButton]! // Question button collection.
+    
     @IBAction func button1(_ sender: Any) {
         if answerNumber == 1 {
             pickQuestion()
@@ -97,7 +96,7 @@ class ChampionViewController: UIViewController {
             
             championQuestion(question: UIImage(named: "Vladimir"), answers: [String(describing: randomChampion()), String(describing: ChampionsEnum.Vladimir), String(describing: randomChampion()), String(describing: randomChampion())], answer: 2),
             
-            championQuestion(question: UIImage(named: "FiddleSticks"), answers: [String(describing: randomChampion()), String(describing: ChampionsEnum.Fiddlesticks), String(describing: randomChampion()), String(describing: randomChampion())], answer: 2),
+            championQuestion(question: UIImage(named: "Fiddlesticks"), answers: [String(describing: randomChampion()), String(describing: ChampionsEnum.Fiddlesticks), String(describing: randomChampion()), String(describing: randomChampion())], answer: 2),
             
             championQuestion(question: UIImage(named: "Kayle"), answers: [String(describing: ChampionsEnum.Kayle), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1),
             
@@ -351,9 +350,10 @@ class ChampionViewController: UIViewController {
             
             championQuestion(question: UIImage(named: "Rakan"), answers: [String(describing: ChampionsEnum.Rakan), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1),
             
-            championQuestion(question: UIImage(named: "Xayah"), answers: [String(describing: ChampionsEnum.Xayah), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1)
+            championQuestion(question: UIImage(named: "Xayah"), answers: [String(describing: ChampionsEnum.Xayah), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion())], answer: 1),
+            
+            championQuestion(question: UIImage(named: "Ornn"), answers: [String(describing: randomChampion()), String(describing: randomChampion()), String(describing: randomChampion()), String(describing: ChampionsEnum.Ornn)], answer: 4)
         ]
-        
         pickQuestion()
     }
     
@@ -361,7 +361,7 @@ class ChampionViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // Pick question function.
+    //Pick question function.
     func pickQuestion() {
         
         gameOver.isHidden = true
@@ -388,7 +388,7 @@ class ChampionViewController: UIViewController {
         }
     }
     
-    // End game function.
+    //End game function.
     func endGame() {
         gameOver.isHidden = false
         score = score - 1

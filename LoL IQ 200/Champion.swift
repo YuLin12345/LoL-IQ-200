@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Champion Enumeration.
+//Champion Enumeration.
 enum ChampionsEnum: UInt32 {
     case Annie          //1
     case Olaf           //2
@@ -146,9 +146,10 @@ enum ChampionsEnum: UInt32 {
     case Bard           //432
     case Rakan          //497
     case Xayah          //498
+    case Ornn           //516
 }
 
-// Find the maximun number of ChampionEnum and return the value.
+//Find the maximun number of ChampionEnum and return the value.
 private let count: ChampionsEnum.RawValue = {
     var maxNum: UInt32 = 0
     
@@ -158,14 +159,14 @@ private let count: ChampionsEnum.RawValue = {
     return maxNum
 }()
 
-// Pick a random Champion from ChampionEnum and return value.
+//Pick a random Champion from ChampionEnum and return value.
 func randomChampion() -> ChampionsEnum {
     let random = arc4random_uniform(count)
     
     return ChampionsEnum(rawValue: random)!
 }
 
-// ChampionArray
+//ChampionArray
 let ChampionArray = [
     "Annie",
     "Olaf",
@@ -302,10 +303,11 @@ let ChampionArray = [
     "Kalista",
     "Bard",
     "Rakan",
-    "Xayah"
+    "Xayah",
+    "Ornn"
 ]
 
-// Pick random Champion from the array and return value.
+//Pick random Champion from the array and return value.
 func randomChampionArray() -> String {
     let randomIndex = Int(arc4random_uniform(UInt32(ChampionArray.count)))
     return ChampionArray[randomIndex]

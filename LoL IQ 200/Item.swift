@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Item Enumeration.
+//Item Enumeration.
 enum ItemsEnum {
     
 }
