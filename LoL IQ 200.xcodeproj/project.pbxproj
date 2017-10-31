@@ -21,8 +21,10 @@
 		621FF1E51E3E8AC40030CA74 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E41E3E8AC40030CA74 /* ItemViewController.swift */; };
 		621FF1E71E3E8AED0030CA74 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E61E3E8AED0030CA74 /* SkillViewController.swift */; };
 		621FF1E91E3E8B0D0030CA74 /* ChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FF1E81E3E8B0D0030CA74 /* ChampionViewController.swift */; };
-		623BD37B1F4BEF5300B5D76A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BD3541F4BEF2E00B5D76A /* Alamofire.framework */; };
-		623BD37C1F4BEF5700B5D76A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BD36E1F4BEF4B00B5D76A /* SwiftyJSON.framework */; };
+		624C2FA01FA8FEE20022A121 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BD3541F4BEF2E00B5D76A /* Alamofire.framework */; };
+		624C2FA11FA8FEE20022A121 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 623BD3541F4BEF2E00B5D76A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		624C2FA51FA8FEE50022A121 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BD36E1F4BEF4B00B5D76A /* SwiftyJSON.framework */; };
+		624C2FA61FA8FEE50022A121 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 623BD36E1F4BEF4B00B5D76A /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62A4C8F01E3FE00F0031EDB9 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A4C8EF1E3FE00F0031EDB9 /* Stat.swift */; };
 /* End PBXBuildFile section */
 
@@ -139,14 +141,28 @@
 			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
-		623BD37D1F4BEF5E00B5D76A /* PBXContainerItemProxy */ = {
+		624C2F9A1FA8FED00022A121 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 623BD3481F4BEF2E00B5D76A /* Alamofire.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
-		623BD37F1F4BEF6200B5D76A /* PBXContainerItemProxy */ = {
+		624C2F9E1FA8FED50022A121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623BD3631F4BEF4B00B5D76A /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		624C2FA21FA8FEE20022A121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 623BD3481F4BEF2E00B5D76A /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		624C2FA71FA8FEE50022A121 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 623BD3631F4BEF4B00B5D76A /* SwiftyJSON.xcodeproj */;
 			proxyType = 1;
@@ -156,12 +172,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		629BB5261F08972000E07641 /* Embed Frameworks */ = {
+		624C2FA41FA8FEE20022A121 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				624C2FA61FA8FEE50022A121 /* SwiftyJSON.framework in Embed Frameworks */,
+				624C2FA11FA8FEE20022A121 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +217,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623BD37C1F4BEF5700B5D76A /* SwiftyJSON.framework in Frameworks */,
-				623BD37B1F4BEF5300B5D76A /* Alamofire.framework in Frameworks */,
+				624C2FA51FA8FEE50022A121 /* SwiftyJSON.framework in Frameworks */,
+				624C2FA01FA8FEE20022A121 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,13 +346,15 @@
 				621FF1A51E3E84E40030CA74 /* Sources */,
 				621FF1A61E3E84E40030CA74 /* Frameworks */,
 				621FF1A71E3E84E40030CA74 /* Resources */,
-				629BB5261F08972000E07641 /* Embed Frameworks */,
+				624C2FA41FA8FEE20022A121 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				623BD3801F4BEF6200B5D76A /* PBXTargetDependency */,
-				623BD37E1F4BEF5E00B5D76A /* PBXTargetDependency */,
+				624C2F9B1FA8FED00022A121 /* PBXTargetDependency */,
+				624C2F9F1FA8FED50022A121 /* PBXTargetDependency */,
+				624C2FA31FA8FEE20022A121 /* PBXTargetDependency */,
+				624C2FA81FA8FEE50022A121 /* PBXTargetDependency */,
 			);
 			name = "LoL IQ 200";
 			productName = "LoL IQ 200";
@@ -384,7 +404,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Unknown;
 				TargetAttributes = {
 					621FF1A81E3E84E40030CA74 = {
@@ -608,15 +628,25 @@
 			target = 621FF1A81E3E84E40030CA74 /* LoL IQ 200 */;
 			targetProxy = 621FF1CB1E3E84E50030CA74 /* PBXContainerItemProxy */;
 		};
-		623BD37E1F4BEF5E00B5D76A /* PBXTargetDependency */ = {
+		624C2F9B1FA8FED00022A121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
-			targetProxy = 623BD37D1F4BEF5E00B5D76A /* PBXContainerItemProxy */;
+			targetProxy = 624C2F9A1FA8FED00022A121 /* PBXContainerItemProxy */;
 		};
-		623BD3801F4BEF6200B5D76A /* PBXTargetDependency */ = {
+		624C2F9F1FA8FED50022A121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SwiftyJSON iOS";
-			targetProxy = 623BD37F1F4BEF6200B5D76A /* PBXContainerItemProxy */;
+			targetProxy = 624C2F9E1FA8FED50022A121 /* PBXContainerItemProxy */;
+		};
+		624C2FA31FA8FEE20022A121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 624C2FA21FA8FEE20022A121 /* PBXContainerItemProxy */;
+		};
+		624C2FA81FA8FEE50022A121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 624C2FA71FA8FEE50022A121 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -649,7 +679,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -657,7 +689,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -699,7 +735,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -707,7 +745,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -743,7 +785,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 257B3G5H93;
 				INFOPLIST_FILE = "LoL IQ 200/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Unknown.LoL-IQ-200";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -762,7 +804,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 257B3G5H93;
 				INFOPLIST_FILE = "LoL IQ 200/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Unknown.LoL-IQ-200";
 				PRODUCT_NAME = "$(TARGET_NAME)";
